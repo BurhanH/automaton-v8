@@ -10,8 +10,8 @@ jdk:
 
 before_install:
   - wget https://github.com/mozilla/geckodriver/releases/download/v0.22.0/geckodriver-v0.22.0-linux64.tar.gz
-  - mkdir $HOME\bin
-  - tar -xzf geckodriver-v0.22.0-linux64.tar.gz -C $HOME\bin
+  - mkdir $HOME/bin
+  - tar -xzf geckodriver-v0.22.0-linux64.tar.gz -C $HOME/bin
 
 
 script:
