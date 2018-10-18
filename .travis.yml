@@ -13,6 +13,7 @@ before_install:
   - mkdir bin
   - tar -xzf geckodriver-v0.22.0-linux64.tar.gz -C bin
   - export PATH=$PATH:$PWD/bin
+  - ls -lah
 
 script:
   - mvn test
