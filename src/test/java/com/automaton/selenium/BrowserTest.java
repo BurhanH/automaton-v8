@@ -24,7 +24,8 @@ class BrowserTest {
 
     @AfterEach
     void tearDown() {
-        driver.quit();
+        if (driver != null)
+            driver.close(); // quit()
     }
 
     @Test
