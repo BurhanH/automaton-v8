@@ -33,8 +33,8 @@ class BrowserTest {
         Dimension resolution = new Dimension(800, 600);
         driver.manage().window().setSize(resolution);
 
-        assertEquals(driver.manage().window().getSize().width, resolution.width, "Expected width 1024!");
-        assertEquals(driver.manage().window().getSize().height, resolution.height, "Expected height 768");
+        assertEquals(driver.manage().window().getSize().width, resolution.width, "Expected width 800!");
+        assertEquals(driver.manage().window().getSize().height, resolution.height, "Expected height 600!");
     }
 
     @Test
@@ -42,8 +42,8 @@ class BrowserTest {
         Dimension resolution = new Dimension(1280, 1024);
         driver.manage().window().setSize(resolution);
 
-        assertEquals(driver.manage().window().getSize().width, resolution.width, "Expected width 1024!");
-        assertEquals(driver.manage().window().getSize().height, resolution.height, "Expected height 768");
+        assertEquals(driver.manage().window().getSize().width, resolution.width, "Expected width 1280!");
+        assertEquals(driver.manage().window().getSize().height, resolution.height, "Expected height 1024!");
     }
 
     @Test
@@ -51,8 +51,8 @@ class BrowserTest {
         Dimension resolution = new Dimension(1600, 1200);
         driver.manage().window().setSize(resolution);
 
-        assertEquals(driver.manage().window().getSize().width, resolution.width, "Expected width 1024!");
-        assertEquals(driver.manage().window().getSize().height, resolution.height, "Expected height 768");
+        assertEquals(driver.manage().window().getSize().width, resolution.width, "Expected width 1600!");
+        assertEquals(driver.manage().window().getSize().height, resolution.height, "Expected height 1200!");
     }
 
     @Test
@@ -60,8 +60,8 @@ class BrowserTest {
         Dimension resolution = new Dimension(1680, 1050);
         driver.manage().window().setSize(resolution);
 
-        assertEquals(driver.manage().window().getSize().width, resolution.width, "Expected width 1024!");
-        assertEquals(driver.manage().window().getSize().height, resolution.height, "Expected height 768");
+        assertEquals(driver.manage().window().getSize().width, resolution.width, "Expected width 1680!");
+        assertEquals(driver.manage().window().getSize().height, resolution.height, "Expected height 1050!");
     }
 
     @Test
@@ -69,7 +69,7 @@ class BrowserTest {
         Dimension resolution = new Dimension(1900, 1200);
         driver.manage().window().setSize(resolution);
 
-        assertEquals(driver.manage().window().getSize().width, resolution.width, "Expected width 1024!");
-        assertEquals(driver.manage().window().getSize().height, resolution.height, "Expected height 768");
+        assertEquals(driver.manage().window().getSize().width, resolution.width, "Expected width 1900!");
+        assertEquals(driver.manage().window().getSize().height, resolution.height, "Expected height 1200!");
     }
 }
