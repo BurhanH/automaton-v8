@@ -7,7 +7,25 @@ Automation framework (UI) - an example. Based on Java, Selenium, JUnit
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/89eea4372b734050be9a1e958879db6a)](https://app.codacy.com/app/BurhanH/automaton-v8?utm_source=github.com&utm_medium=referral&utm_content=BurhanH/automaton-v8&utm_campaign=Badge_Grade_Dashboard)
 
 ## Requirements
-Java 1.8.0_181, JDK 11.0.1, JUnit 5<br>
-Maven  3.5.4 <br>
+JDK 11.0.1, JUnit 5, Selenium 3.14.0, <br>
+Maven (software project management), <br>
+Firefox 62.*, geckodriver 0.22 <br>
+
+## Project structure
+```text
+-- automaton-v8
+   |-- .gitattributes
+   |-- .gitignore
+   |-- .travis.yml
+   |-- LICENSE
+   |-- pom.xml
+   |-- README.md
+   `-- src
+       `-- test
+           `-- java
+               `-- com.automaton.selenium
+               |-- BrowserTest.java
+               |-- InitialTest.jav
+```
 
 To be continue ...
