@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class InitialTest {
 
     @Test
-    public void testOne(){
+    void testOne(){
         // Simple test. Expecting True
         String text = "Java is awesome!";
         String text1 = "Java is awesome!";
@@ -16,7 +16,7 @@ class InitialTest {
     }
 
     @Test
-    public void testTwo(){
+    void testTwo(){
         // Simple test. Expecting False
         String text = "Java is awesome!";
         String text1 = "Java";

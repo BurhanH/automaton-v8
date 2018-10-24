@@ -13,4 +13,4 @@ before_install:
   - tar -xzf geckodriver-v0.22.0-linux64.tar.gz -C $HOME/bin
 
 script:
-  - mvn test
+  - mvn clean test
