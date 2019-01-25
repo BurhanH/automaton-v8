@@ -1,18 +1,15 @@
-package com.automaton.selenium;
+package com.automation.selenium;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class GoogleTest {
 
@@ -32,16 +29,14 @@ class GoogleTest {
     }
 
     @Test
-    void testGoogle(){
+    void testGoogle() {
         driver.get("https://www.google.com");
         WebElement element = driver.findElement(By.name("q"));
         element.sendKeys("Java");
         element.submit();
-        (new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
-            public Boolean apply(WebDriver d) {
-                return d.findElement(By.cssSelector(".bNg8Rb"));
-            }
 
+        WebElement element1 = driver.findElement(By.cssSelector(".bNg8Rb"));
+        element1.isDisplayed();
     }
 
 }
