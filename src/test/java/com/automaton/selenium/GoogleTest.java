@@ -11,6 +11,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 class GoogleTest {
 
     private WebDriver driver;
@@ -36,7 +38,7 @@ class GoogleTest {
         element.submit();
 
         WebElement element1 = driver.findElement(By.cssSelector(".bNg8Rb"));
-        element1.isDisplayed();
+        assertTrue(element1.isDisplayed());
     }
 
 }
