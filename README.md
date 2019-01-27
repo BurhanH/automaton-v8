@@ -26,6 +26,7 @@ Firefox 62.*, geckodriver 0.23 <br>
                `-- com.automaton.selenium
                |-- BrowserTest.java
                |-- InitialTest.java
+               |-- GoogleTest.java
 ```
 
 To be continue ...
