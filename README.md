@@ -9,7 +9,7 @@ Automation framework (UI) - an example. Based on Java, Selenium, JUnit
 ## Requirements
 JDK 11.0.1, JUnit 5, Selenium 3.141.59, <br>
 Maven (software project management), <br>
-Firefox 62.*, geckodriver 0.23 <br>
+Firefox 65.\*, geckodriver 0.24 <br>
 
 ## Project structure
 ```text
