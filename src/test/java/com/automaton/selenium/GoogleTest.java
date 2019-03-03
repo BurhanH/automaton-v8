@@ -13,25 +13,25 @@ import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class GoogleTest {
+public class GoogleTest {
 
     private WebDriver driver;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().setSize(new Dimension(1280, 1024));
     }
 
     @AfterEach
-    void tearDown() {
+    public void tearDown() {
         if (driver != null)
             driver.close(); // quit()
     }
 
     @Test
-    void testGoogle() {
+    public void testGoogle() {
         driver.get("https://www.google.com");
         WebElement element = driver.findElement(By.name("q"));
         element.sendKeys("Java");
