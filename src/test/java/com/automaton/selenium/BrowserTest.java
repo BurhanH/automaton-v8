@@ -29,7 +29,7 @@ public class BrowserTest {
     }
 
     @Test
-    public void testResolution1(){
+    public void testResolution1() {
         Dimension resolution = new Dimension(800, 600);
         driver.manage().window().setSize(resolution);
 
@@ -38,7 +38,7 @@ public class BrowserTest {
     }
 
     @Test
-    public void testResolution2(){
+    public void testResolution2() {
         Dimension resolution = new Dimension(1280, 1024);
         driver.manage().window().setSize(resolution);
 
@@ -47,7 +47,7 @@ public class BrowserTest {
     }
 
     @Test
-    public void testResolution3(){
+    public void testResolution3() {
         Dimension resolution = new Dimension(1600, 1200);
         driver.manage().window().setSize(resolution);
 
@@ -56,7 +56,7 @@ public class BrowserTest {
     }
 
     @Test
-    public void testResolution4(){
+    public void testResolution4() {
         Dimension resolution = new Dimension(1680, 1050);
         driver.manage().window().setSize(resolution);
 
@@ -65,7 +65,7 @@ public class BrowserTest {
     }
 
     @Test
-    public void testResolution5(){
+    public void testResolution5() {
         Dimension resolution = new Dimension(1900, 1200);
         driver.manage().window().setSize(resolution);
 
