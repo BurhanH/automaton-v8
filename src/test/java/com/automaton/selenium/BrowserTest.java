@@ -11,25 +11,25 @@ import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class BrowserTest {
+public class BrowserTest {
 
     private WebDriver driver;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().setSize(new Dimension(1280, 1024));
     }
 
     @AfterEach
-    void tearDown() {
+    public void tearDown() {
         if (driver != null)
             driver.close(); // quit()
     }
 
     @Test
-    void testResolution1(){
+    public void testResolution1(){
         Dimension resolution = new Dimension(800, 600);
         driver.manage().window().setSize(resolution);
 
@@ -38,7 +38,7 @@ class BrowserTest {
     }
 
     @Test
-    void testResolution2(){
+    public void testResolution2(){
         Dimension resolution = new Dimension(1280, 1024);
         driver.manage().window().setSize(resolution);
 
@@ -47,7 +47,7 @@ class BrowserTest {
     }
 
     @Test
-    void testResolution3(){
+    public void testResolution3(){
         Dimension resolution = new Dimension(1600, 1200);
         driver.manage().window().setSize(resolution);
 
@@ -56,7 +56,7 @@ class BrowserTest {
     }
 
     @Test
-    void testResolution4(){
+    public void testResolution4(){
         Dimension resolution = new Dimension(1680, 1050);
         driver.manage().window().setSize(resolution);
 
@@ -65,7 +65,7 @@ class BrowserTest {
     }
 
     @Test
-    void testResolution5(){
+    public void testResolution5(){
         Dimension resolution = new Dimension(1900, 1200);
         driver.manage().window().setSize(resolution);
 
