@@ -1,6 +1,6 @@
-# automaton-v8
+# Automaton-v8
 
-Automation framework (UI) - an example. Based on Java, Selenium, JUnit
+Automation testing framework (UI) - an example. Based on Java, Selenium, JUnit
 
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/BurhanH/automaton-v8/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/BurhanH/automaton-v8.svg?branch=master)](https://travis-ci.org/BurhanH/automaton-v8)
