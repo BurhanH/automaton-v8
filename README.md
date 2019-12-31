@@ -9,7 +9,7 @@ Automation testing framework (UI) - an example. Based on Java, Selenium, JUnit
 ## Requirements
 JDK 11.0.1, JUnit 5, Selenium 3.141.59, <br>
 Maven (software project management), <br>
-Firefox 70.\*, geckodriver 0.26.0 <br>
+Firefox 71.\*, geckodriver 0.26.0 <br>
 
 ## Project structure
 ```text
